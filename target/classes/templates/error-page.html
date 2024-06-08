@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Error page</title>
+    <style>
+        div.message {
+            margin: 0 auto;
+            width: max-content;
+            user-select: none;
+        }
+
+        div#errorCode {
+            font-size: 75px;
+            color: dimgrey;
+        }
+
+        div#errorCodeDescription {
+            font-size: 28px;
+            color: slategrey;
+        }
+
+        div#errorMessage {
+            font-size: 18px;
+            color: lightslategrey;
+            user-select: text;
+        }
+    </style>
+</head>
+<body>
+<div th:replace="header"></div>
+<br>
+<div class="message" id="errorCode" th:text="${code}"></div>
+<div class="message" id="errorCodeDescription" th:text="${codeDescription}"></div>
+<br>
+<div class="message" id="errorMessage"><pre th:text="${message}"></pre></div>
+</body>
+</html>
+

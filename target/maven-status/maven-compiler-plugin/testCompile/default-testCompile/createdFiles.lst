@@ -1,0 +1,10 @@
+project\todolist\TodolistApplicationTests.class
+project\todolist\repository\RepositoryTestsUtils.class
+project\todolist\repository\ToDoRepositoryTests.class
+project\todolist\repository\StateRepositoryTests.class
+project\todolist\service\TaskServiceTests.class
+project\todolist\repository\RoleRepositoryTests.class
+project\todolist\service\ToDoServiceTests.class
+project\todolist\service\UserServiceTests.class
+project\todolist\repository\TaskRepositoryTests.class
+project\todolist\repository\UserRepositoryTests.class
